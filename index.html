@@ -35,14 +35,9 @@
     Highcharts.theme = {
        colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
           '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
-       chart: {
-          backgroundColor: {
-             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
-             stops: [
-                [0, '#2a2a2b'],
-                [1, '#3e3e40']
-             ]
-          },
+       chart:
+       {
+          backgroundColor: '#3e3e40',
           style: {
              fontFamily: '\'Unica One\', sans-serif'
           },
@@ -461,14 +456,14 @@
       },
       xAxis:
        {
-        categories: ['< HighSchool','HighSchool Graduate','Some College','College Graduate']
+        categories: ['Less than HighSchool','HighSchool Graduate','Some College','College Graduate']
        },
        series:
        [{
          showInLegend:false,
          data:
            [{
-           name: '< HighSchool',
+           name: 'Less than HighSchool',
            y: 50.2
          },{
            name: 'HighSchool Graduate',
@@ -496,14 +491,14 @@
       },
       xAxis:
        {
-        categories: ['< $15,000','$15,000 - $24,999','$25,000 - $34,999','$35,000 - $49,999','> $50,000']
+        categories: ['Less than $15,000','$15,000 - $24,999','$25,000 - $34,999','$35,000 - $49,999','> $50,000']
        },
        series:
        [{
          showInLegend:false,
          data:
            [{
-           name: '< $15,000',
+           name: 'Less than $15,000',
            y: 59.2
          },{
            name: '$15,000 - $24,999',
