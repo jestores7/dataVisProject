@@ -1,0 +1,24 @@
+Category,Type,Physical Activity (%)
+All ,Total,62.6
+Sex,Male,62.8
+Sex,Female,62.4
+Age,18 - 24,71
+Age,25 - 34,59.6
+Age,35 - 50,61.3
+Age,51 - 64,60.7
+Age,65+,64.4
+Ethnicity,White,69.2
+Ethnicity,Hispanic,56.1
+Ethnicity,Black,55
+Ethnicity,Asian/Other,51
+Education,Less than High School,50.2
+Education,High School Graduate,61.8
+Education,Some College,63.7
+Education,College Graduate,70.3
+Income,"Less than $15,000",59.2
+Income,"$15,000 - 24,999",59.1
+Income,"$25,000 - 34,999",60.1
+Income,"$35,000 - 49,999",64.9
+Income,"$50,000+",70.1
+Overweight Status,Overweight/Obese,60.7
+Overweight Status,Not Overweight,68.7

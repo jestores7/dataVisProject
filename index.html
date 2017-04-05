@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Data Visualization Project</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+
+
+
+  </head>
+  <body>
+    <div id= "container">
+    </div>
+<div id ='a'>
+    <select id ="dropdown">
+      <option value ="0">"All"</option>
+      <option value ="1">"Sex"</option>
+      <option value ="2">"Age"</option>
+      <option value ="3">"Ethnicity"</option>
+      <option value ="4">"Education"</option>
+      <option value ="5">"Income"</option>
+      <option value ="6">"Overweight Status"</option>
+    </select>
+</a>
+    <script type="text/javascript">
+    //Global Stuff
+
+    //Load Json File and Log into console if data loaded Not used. decided to hardcode Data
+    //var seriesData =  $.getJSON("./CaliforniaActivity.json", function(data){console.log(data);});
+
+    //Theme
+    Highcharts.theme = {
+       colors: ['#2b908f', '#90ee7e', '#f45b5b', '#7798BF', '#aaeeee', '#ff0066', '#eeaaee',
+          '#55BF3B', '#DF5353', '#7798BF', '#aaeeee'],
+       chart: {
+          backgroundColor: {
+             linearGradient: { x1: 0, y1: 0, x2: 1, y2: 1 },
+             stops: [
+                [0, '#2a2a2b'],
+                [1, '#3e3e40']
+             ]
+          },
+          style: {
+             fontFamily: '\'Unica One\', sans-serif'
+          },
+          plotBorderColor: '#606063'
+       },
+       title: {
+          style: {
+             color: '#E0E0E3',
+             textTransform: 'uppercase',
+             fontSize: '20px'
+          }
+       },
+       subtitle: {
+          style: {
+             color: '#E0E0E3',
+             textTransform: 'uppercase'
+          }
+       },
+       xAxis: {
+          gridLineColor: '#707073',
+          labels: {
+             style: {
+                color: '#E0E0E3'
+             }
+          },
+          lineColor: '#707073',
+          minorGridLineColor: '#505053',
+          tickColor: '#707073',
+          title: {
+             style: {
+                color: '#A0A0A3'
+
+             }
+          }
+       },
+       yAxis: {
+          gridLineColor: '#707073',
+          labels: {
+             style: {
+                color: '#E0E0E3'
+             }
+          },
+          lineColor: '#707073',
+          minorGridLineColor: '#505053',
+          tickColor: '#707073',
+          tickWidth: 1,
+          title: {
+             style: {
+                color: '#A0A0A3'
+             }
+          }
+       },
+       tooltip: {
+          backgroundColor: 'rgba(0, 0, 0, 0.85)',
+          style: {
+             color: '#F0F0F0'
+          }
+       },
+       plotOptions: {
+          series: {
+             dataLabels: {
+                color: '#B0B0B3'
+             },
+             marker: {
+                lineColor: '#333'
+             }
+          },
+          boxplot: {
+             fillColor: '#505053'
+          },
+          candlestick: {
+             lineColor: 'white'
+          },
+          errorbar: {
+             color: 'white'
+          }
+       },
+       legend: {
+          itemStyle: {
+             color: '#E0E0E3'
+          },
+          itemHoverStyle: {
+             color: '#FFF'
+          },
+          itemHiddenStyle: {
+             color: '#606063'
+          }
+       },
+       credits: {
+          style: {
+             color: '#666'
+          }
+       },
+       labels: {
+          style: {
+             color: '#707073'
+          }
+       },
+
+       drilldown: {
+          activeAxisLabelStyle: {
+             color: '#F0F0F3'
+          },
+          activeDataLabelStyle: {
+             color: '#F0F0F3'
+          }
+       },
+
+       navigation: {
+          buttonOptions: {
+             symbolStroke: '#DDDDDD',
+             theme: {
+                fill: '#505053'
+             }
+          }
+       },
+
+       // scroll charts
+       rangeSelector: {
+          buttonTheme: {
+             fill: '#505053',
+             stroke: '#000000',
+             style: {
+                color: '#CCC'
+             },
+             states: {
+                hover: {
+                   fill: '#707073',
+                   stroke: '#000000',
+                   style: {
+                      color: 'white'
+                   }
+                },
+                select: {
+                   fill: '#000003',
+                   stroke: '#000000',
+                   style: {
+                      color: 'white'
+                   }
+                }
+             }
+          },
+          inputBoxBorderColor: '#505053',
+          inputStyle: {
+             backgroundColor: '#333',
+             color: 'silver'
+          },
+          labelStyle: {
+             color: 'silver'
+          }
+       },
+
+       navigator: {
+          handles: {
+             backgroundColor: '#666',
+             borderColor: '#AAA'
+          },
+          outlineColor: '#CCC',
+          maskFill: 'rgba(255,255,255,0.1)',
+          series: {
+             color: '#7798BF',
+             lineColor: '#A6C7ED'
+          },
+          xAxis: {
+             gridLineColor: '#505053'
+          }
+       },
+
+       scrollbar: {
+          barBackgroundColor: '#808083',
+          barBorderColor: '#808083',
+          buttonArrowColor: '#CCC',
+          buttonBackgroundColor: '#606063',
+          buttonBorderColor: '#606063',
+          rifleColor: '#FFF',
+          trackBackgroundColor: '#404043',
+          trackBorderColor: '#404043'
+       },
+
+       // special colors for some of the
+       legendBackgroundColor: 'rgba(0, 0, 0, 0.5)',
+       background2: '#505053',
+       dataLabelsColor: '#B0B0B3',
+       textColor: '#C0C0C0',
+       contrastTextColor: '#F0F0F3',
+       maskColor: 'rgba(255,255,255,0.3)'
+    };
+
+    //Apply theme
+    Highcharts.setOptions(Highcharts.theme);
+
+    // Set up the chart
+    var chart = new Highcharts.Chart(
+      {
+        chart:
+        {
+            renderTo: 'container',
+            type: 'column',
+            options3d:
+            {
+                enabled: true,
+                alpha: 10,
+                beta: 10,
+                depth: 100,
+                viewDistance: 25
+            }
+        },
+        plotOptions:
+        {
+          column:
+          {
+            dataLabels:
+            {
+                enabled: true
+            }
+          }
+        },
+        title:
+        {
+            text: 'California Physical Activity'
+        },
+        subtitle:
+        {
+            text: 'Year: 2013 - Total'
+        },
+
+        yAxis:
+        {
+          title:
+          {
+            text: "Physical Activity (%)"
+          },
+          tickInterval: 10
+        },
+        xAxis:
+        {
+          title:
+          {
+            text: "Category"
+          },
+          categories:['Total'],
+
+          labels:
+          {
+            enabled: true,
+
+          },
+          tickInterval: 1
+        },
+
+        plotOptions:
+        {
+            column:
+            {
+                depth: 25
+            }
+        },
+        series:
+        [{
+          showInLegend:false,
+          data:
+            [{
+            name: 'Total',
+            y: 62.6
+            }]
+        }]
+    });
+
+    //Have to change selector.
+    //Thinking about hardocding data series and declaring a new "new Highcharts.Chart("
+    //Might have to to the xAxis portions as well as series and then update highcharts chart.update most likely
+;
+
+
+    function showValues()
+    {
+        $('#alpha-value').html(chart.options.chart.options3d.alpha);
+        $('#beta-value').html(chart.options.chart.options3d.beta);
+        $('#depth-value').html(chart.options.chart.options3d.depth);
+    }
+
+    //What happens When a dropdown menu is selected
+    $("#dropdown").on('change', function()
+    {
+    if ($(this).val() == '0')//All
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Total'
+      },
+      xAxis:
+       {
+        categories: ['Total']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: 'Total',
+           y: 62.6
+           }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '1')//Sex
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Sex'
+      },
+      xAxis:
+       {
+        categories: ['Male','Female']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: 'Male',
+           y: 62.8
+         },{
+           name: 'Female',
+           y: 62.4,
+           color:'white'
+           }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '2')//Age
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Age'
+      },
+      xAxis:
+       {
+        categories: ['18 - 24','25 - 34','35-50','51-64','65+']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: '18 - 24',
+           y: 71
+         },{
+           name: '25 - 34',
+           y: 59.6,
+           color:'white'
+         },{
+           name: '35-50',
+           y: 61.3,
+           color:'green'
+         },{
+           name: '51 - 64',
+           y: 60.7,
+           color:'red'
+         },{
+           name: '65+',
+           y: 64.4,
+           color:'blue'
+           }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '3')//Ethnicity
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Ethnicity'
+      },
+      xAxis:
+       {
+        categories: ['White','Hispanic','Black','Asian/Other']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: 'White',
+           y: 69.2,
+           color:'White'
+         },{
+           name: 'Hispanic',
+           y: 56.1,
+           color:'blue'
+         },{
+           name: 'Black',
+           y: 55,
+           color:'black'
+         },{
+           name: 'Asian/Other',
+           y: 51,
+           color:'yellow'
+         }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '4')//Education
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Education'
+      },
+      xAxis:
+       {
+        categories: ['< HighSchool','HighSchool Graduate','Some College','College Graduate']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: '< HighSchool',
+           y: 50.2
+         },{
+           name: 'HighSchool Graduate',
+           y: 61.8,
+           color:'white'
+         },{
+           name: 'Some College',
+           y: 63.7,
+           color:'green'
+         },{
+           name: 'College Graduate',
+           y: 70.3,
+           color:'brown'
+         }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '5')//Income
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Income'
+      },
+      xAxis:
+       {
+        categories: ['< $15,000','$15,000 - $24,999','$25,000 - $34,999','$35,000 - $49,999','> $50,000']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: '< $15,000',
+           y: 59.2
+         },{
+           name: '$15,000 - $24,999',
+           y: 59.1,
+           color:'white'
+         },{
+           name: '$24,999 - $34,999',
+           y: 60.1,
+           color:'green'
+         },{
+           name: '$35,000 - $49,999',
+           y: 64.9,
+           color:'red'
+         },{
+           name: '> $50,000',
+           y: 70.1,
+           color:'blue'
+           }]
+       }]
+
+     });
+    }
+    if ($(this).val() == '6')//Overweight Status
+    {
+      chart.update({
+      subtitle:
+      {
+        text: 'Year: 2013 - Overweight Status'
+      },
+      xAxis:
+       {
+        categories: ['Overweight/Obese','Not Overweight']
+       },
+       series:
+       [{
+         showInLegend:false,
+         data:
+           [{
+           name: 'Overweight/Obese',
+           y: 60.7
+         },{
+           name: 'Not Overweight',
+           y: 68.7,
+           color:'white'
+           }]
+       }]
+
+     });
+    }
+    });
+
+
+
+    showValues();
+    </script>
+  </body>
+</html>

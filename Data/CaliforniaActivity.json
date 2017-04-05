@@ -1,0 +1,113 @@
+[
+  {"All":
+    [{
+    "Type": "Total",
+    "Physical Activity (%)": 62.6
+    }]
+  },
+  {"Sex":[
+    {
+      "Type": "Male",
+      "Physical Activity (%)": 62.8
+    },
+    {
+      "Type": "Female",
+      "Physical Activity (%)": 62.4
+    }
+  ]},
+  {"Age":[
+    {
+      "Type": "18 - 24",
+      "Physical Activity (%)": 71
+    },
+    {
+      "Type": "25 - 34",
+      "Physical Activity (%)": 59.6
+    },
+    {
+      "Type": "35 - 50",
+      "Physical Activity (%)": 61.3
+    },
+    {
+      "Type": "51 - 64",
+      "Physical Activity (%)": 60.7
+    },
+    {
+      "Type": "65+",
+      "Physical Activity (%)": 64.4
+    }
+  ]},
+
+  {"Ethnicity":[
+    {
+      "Type": "White",
+      "Physical Activity (%)": 69.2
+    },
+    {
+      "Type": "Hispanic",
+      "Physical Activity (%)": 56.1
+    },
+    {
+      "Type": "Black",
+      "Physical Activity (%)": 55
+    },
+    {
+      "Type": "Asian/Other",
+      "Physical Activity (%)": 51
+    }
+  ]},
+
+  {"Education": [
+    {
+      "Type": "Less than High School",
+      "Physical Activity (%)": 50.2
+    },
+    {
+      "Type": "High School Graduate",
+      "Physical Activity (%)": 61.8
+    },
+    {
+      "Type": "Some College",
+      "Physical Activity (%)": 63.7
+    },
+    {
+      "Type": "College Graduate",
+      "Physical Activity (%)": 70.3
+    }
+
+  ]},
+
+  {"Income":[
+    {
+      "Type": "Less than $15,000",
+      "Physical Activity (%)": 59.2
+    },
+    {
+      "Type": "$15,000 - 24,999",
+      "Physical Activity (%)": 59.1
+    },
+    {
+      "Type": "$25,000 - 34,999",
+      "Physical Activity (%)": 60.1
+    },
+    {
+      "Type": "$35,000 - 49,999",
+      "Physical Activity (%)": 64.9
+    },
+    {
+      "Type": "$50,000+",
+      "Physical Activity (%)": 70.1
+    }
+  ]},
+
+  {"OverWeight Status": [
+    {
+      "Type": "Overweight/Obese",
+      "Physical Activity (%)": 60.7
+    },
+    {
+      "Type": "Not Overweight",
+      "Physical Activity (%)": 68.7
+    }
+  ]},
+]

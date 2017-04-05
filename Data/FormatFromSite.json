@@ -1,0 +1,440 @@
+//Link Download 1:  https://chhs.data.ca.gov/api/views/djds-btgz/rows.json?accessType=DOWNLOAD
+//Link Download 2: https://www.healthdata.gov/dataset/california-adults-who-met-physical-activity-guidelines-americans-2013/resource/63049184-bb22
+{
+  "meta" : {
+    "view" : {
+      "id" : "djds-btgz",
+      "name" : "California Adults Who Met Physical Activity Guidelines for Americans, 2013",
+      "attribution" : "Center for Chronic Disease Prevention and Health Promotion/Chronic Disease and Injury Control/Nutrition Education and Obesity Prevention Branch/Research and Evaluation Section",
+      "attributionLink" : "http://www.cdph.ca.gov/programs/cpns/Pages/CaliforniaStatewideSurveys.aspx#1",
+      "averageRating" : 0,
+      "category" : "Demographics",
+      "createdAt" : 1451518740,
+      "description" : "This dataset is from the 2013 California Dietary Practices Survey of Adults. This survey has been discontinued. Adults were asked a series of eight questions about their physical activity practices in the last month. These questions were borrowed from the Behavior Risk Factor Surveillance System. Data displayed in this table represent California adults who met the aerobic recommendation for physical activity, as defined by the 2008 U.S. Department of Health and Human Services Physical Activity Guidelines for Americans and Objectives 2.1 and 2.2 of Healthy People 2020.\r\n\r\nThe California Dietary Practices Surveys (CDPS) (now discontinued) was the most extensive dietary and physical activity assessment of adults 18 years and older in the state of California. CDPS was designed in 1989 and was administered biennially in odd years up through 2013.  The CDPS was designed to monitor dietary trends, especially fruit and vegetable consumption, among California adults for evaluating their progress toward meeting the 2010 Dietary Guidelines for Americans and the Healthy People 2020 Objectives. For the data in this table, adults were asked a series of eight questions about their physical activity practices in the last month. Questions included: 1) During the past month, other than your regular job, did you participate in any physical activities or exercise such as running, calisthenics, golf, gardening or walking for exercise?  2) What type of physical activity or exercise did you spend the most time doing during the past month?  3) How many times per week or per month did you take part   n this activity during the past month?  4) And when you took part in this activity, for how many minutes or hours did you usually keep at it?  5) During the past month, how many times per week or per month did you do physical activities or exercises to strengthen your muscles? Questions 2, 3, and 4 were repeated to collect a second activity. Data were collected using a list of participating CalFresh households and random digit dial, approximately 1,400-1,500 adults (ages 18 and over) were interviewed via phone survey between the months of June and October. Demographic data included gender, age, ethnicity, education level, income, physical activity level, overweight status, and food stamp eligibility status. Data were oversampled for low-income adults to provide greater sensitivity for analyzing trends among our target population.",
+      "displayType" : "table",
+      "downloadCount" : 196,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "indexUpdatedAt" : 1487372056,
+      "licenseId" : "SEE_TERMS_OF_USE",
+      "newBackend" : false,
+      "numberOfComments" : 0,
+      "oid" : 16061083,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1451518741,
+      "publicationGroup" : 6570263,
+      "publicationStage" : "published",
+      "rowClass" : "",
+      "rowsUpdatedAt" : 1451602827,
+      "rowsUpdatedBy" : "7krv-k7t3",
+      "tableId" : 6570263,
+      "totalTimesRated" : 0,
+      "viewCount" : 218,
+      "viewLastModified" : 1487372043,
+      "viewType" : "tabular",
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 236040991,
+        "name" : "Year",
+        "dataTypeName" : "text",
+        "description" : "Data shown are for 2013 only. N=1,468\n\nThe California Dietary Practices Survey (CDPS) was the most extensive dietary and physical activity assessment of adults 18 years and older in the state of California. CDPS was designed in 1989 and was administered biennially in odd years through 2013. Using a list of participating CalFresh households and random digit dial, 1,468 adults (ages 18 and over) were interviewed via phone survey between the months of June and October. . ",
+        "fieldName" : "year",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33601307,
+        "width" : 148,
+        "cachedContents" : {
+          "largest" : "2013",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "2013",
+            "count" : 20
+          } ],
+          "smallest" : "2013"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "right"
+        }
+      }, {
+        "id" : 236040992,
+        "name" : "Category",
+        "dataTypeName" : "text",
+        "description" : "Demographic data included gender, age, ethnicity, education level, income, physical activity level, overweight status, and SNAP-Ed eligibility status. \n\nData were oversampled for low-income adults to provide greater sensitivity for analyzing trends among the target population. \n",
+        "fieldName" : "category",
+        "position" : 2,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33601308,
+        "width" : 196,
+        "cachedContents" : {
+          "largest" : "SNAP/CalFresh Status, % FPL",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "All ",
+            "count" : 20
+          }, {
+            "item" : "Sex",
+            "count" : 19
+          }, {
+            "item" : "Age",
+            "count" : 18
+          }, {
+            "item" : "Ethnicity",
+            "count" : 17
+          }, {
+            "item" : "Education",
+            "count" : 16
+          }, {
+            "item" : "Income",
+            "count" : 15
+          }, {
+            "item" : "Overweight Status",
+            "count" : 14
+          }, {
+            "item" : "SNAP/CalFresh Status, % FPL",
+            "count" : 13
+          } ],
+          "smallest" : "Age"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 236040993,
+        "name" : "Type",
+        "dataTypeName" : "text",
+        "description" : "Overweight Status:\nOverweight/Obese = Body mass index greater than or equal to 25. \nNot overweight = Body mass index less than 25.\nIncome\nIncome = household income for the individual interviewed.\n\nSNAP/CalFresh Status \nSNAP participants are defined as having indicated they or someone in their household received CalFresh benefits in the last 12 months. The population not receiving CalFresh benefits with incomes between 131% and 185% of the Federal Poverty Level was not an adequate size for analysis.\nLikely eligible = household income at or below 130% of the Federal Poverty Level, but have not received CalFresh benefits in the last 12 months. \nNot eligible = household income above 185% of the Federal Poverty Level, and have not received CalFresh benefits in the last 12 months.\n",
+        "fieldName" : "type",
+        "position" : 3,
+        "renderTypeName" : "text",
+        "tableColumnId" : 33601309,
+        "width" : 148,
+        "cachedContents" : {
+          "largest" : "White",
+          "non_null" : 26,
+          "null" : 0,
+          "top" : [ {
+            "item" : "Total",
+            "count" : 20
+          }, {
+            "item" : "Male",
+            "count" : 19
+          }, {
+            "item" : "Female",
+            "count" : 18
+          }, {
+            "item" : "18 - 24",
+            "count" : 17
+          }, {
+            "item" : "25 - 34",
+            "count" : 16
+          }, {
+            "item" : "35 - 50",
+            "count" : 15
+          }, {
+            "item" : "51 - 64",
+            "count" : 14
+          }, {
+            "item" : "65+",
+            "count" : 13
+          }, {
+            "item" : "White",
+            "count" : 12
+          }, {
+            "item" : "Hispanic",
+            "count" : 11
+          }, {
+            "item" : "Black",
+            "count" : 10
+          }, {
+            "item" : "Asian/Other",
+            "count" : 9
+          }, {
+            "item" : "Less than High School",
+            "count" : 8
+          }, {
+            "item" : "High School Graduate",
+            "count" : 7
+          }, {
+            "item" : "Some College",
+            "count" : 6
+          }, {
+            "item" : "College Graduate",
+            "count" : 5
+          }, {
+            "item" : "Less than $15,000",
+            "count" : 4
+          }, {
+            "item" : "$15,000 - 24,999",
+            "count" : 3
+          }, {
+            "item" : "$25,000 - 34,999",
+            "count" : 2
+          }, {
+            "item" : "$35,000 - 49,999",
+            "count" : 1
+          } ],
+          "smallest" : "$15,000 - 24,999"
+        },
+        "format" : {
+          "displayStyle" : "plain",
+          "align" : "left"
+        }
+      }, {
+        "id" : 236040994,
+        "name" : "Physical Activity (%)",
+        "dataTypeName" : "number",
+        "description" : "As defined by the 2008 U.S. Department of Health and Human Services Physical Activity Guidelines for Americans and Objectives 2.1 and 2.2 of Healthy People 2020, it is recommended that adults engage in 75 minutes of vigorous or 150 minutes of moderate physical activity per week, or an equivalent combination. \n\nChi-square analysis was performed on each category. There was significance at the p<.001 level for Ethnicity, Education, and SNAP/CalFresh Status, % FPL. There was significance at the p<.01 level for Overweight Status. There was significance at the p<.05 level for Income. \n",
+        "fieldName" : "physical_activity",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 33601310,
+        "width" : 352,
+        "cachedContents" : {
+          "largest" : "71.0",
+          "non_null" : 26,
+          "average" : "61.85384615384615",
+          "null" : 0,
+          "top" : [ {
+            "item" : "62.6",
+            "count" : 20
+          }, {
+            "item" : "62.8",
+            "count" : 19
+          }, {
+            "item" : "62.4",
+            "count" : 18
+          }, {
+            "item" : "71.0",
+            "count" : 17
+          }, {
+            "item" : "59.6",
+            "count" : 16
+          }, {
+            "item" : "61.3",
+            "count" : 15
+          }, {
+            "item" : "60.7",
+            "count" : 14
+          }, {
+            "item" : "64.4",
+            "count" : 13
+          }, {
+            "item" : "69.2",
+            "count" : 12
+          }, {
+            "item" : "56.1",
+            "count" : 11
+          }, {
+            "item" : "55.0",
+            "count" : 10
+          }, {
+            "item" : "51.0",
+            "count" : 9
+          }, {
+            "item" : "50.2",
+            "count" : 8
+          }, {
+            "item" : "61.8",
+            "count" : 7
+          }, {
+            "item" : "63.7",
+            "count" : 6
+          }, {
+            "item" : "70.3",
+            "count" : 5
+          }, {
+            "item" : "59.2",
+            "count" : 4
+          }, {
+            "item" : "59.1",
+            "count" : 3
+          }, {
+            "item" : "60.1",
+            "count" : 2
+          }, {
+            "item" : "64.9",
+            "count" : 1
+          } ],
+          "smallest" : "50.2",
+          "sum" : "1608.2"
+        },
+        "format" : {
+          "precisionStyle" : "standard",
+          "noCommas" : "false",
+          "align" : "right"
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "license" : {
+        "name" : "See Terms of Use"
+      },
+      "metadata" : {
+        "rdfSubject" : "0",
+        "rdfClass" : "",
+        "attachments" : [ {
+          "filename" : "Physical_Activity_of_California_Adults_DD.xlsx",
+          "assetId" : "467ed2a0-a295-40aa-8b59-df4e1d4cb96f",
+          "blobId" : "",
+          "name" : "Physical_Activity_of_California_Adults_DD.xlsx"
+        } ],
+        "custom_fields" : {
+          "Dataset Summary" : {
+            "Geographic Granularity (fields included)" : "State",
+            "Posting Frequency" : "None Planned",
+            "Language" : "Other (see below)",
+            "Geographic Area Covered" : "California",
+            "Limitations/Exclusions" : "Use of this data is subject to the CHHS Terms of Use and any copyright and proprietary notices incorporated in or accompanying the individual files.",
+            "Contact Point" : "opendata@cdph.ca.gov",
+            "Language (if other than English)" : "Data was collected using English and Spanish Surveys",
+            "Publisher" : "California Department of Public Health",
+            "Temporal Coverage" : "2013",
+            "Citation" : "Nutrition Education and Obesity Prevention Branch, California Department of Public Health. 2014. Self-Reported Participation in Recommended Aerobic Physical Activity by California Adults"
+          },
+          "Narrative Information" : {
+            "Data Collection Tool" : "http://www.cdph.ca.gov/programs/cpns/Documents/CDPSBackground2013.pdf",
+            "Secondary Sources" : "N/A"
+          }
+        },
+        "rowIdentifier" : "0",
+        "rowLabel" : "Row",
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ],
+        "renderTypeConfig" : {
+          "visible" : {
+            "table" : true
+          }
+        }
+      },
+      "owner" : {
+        "id" : "ewrp-978f",
+        "displayName" : "Administrator",
+        "profileImageUrlLarge" : "/api/users/ewrp-978f/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/ewrp-978f/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/ewrp-978f/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "ewrp-978f",
+        "displayName" : "Administrator",
+        "profileImageUrlLarge" : "/api/users/ewrp-978f/profile_images/LARGE",
+        "profileImageUrlMedium" : "/api/users/ewrp-978f/profile_images/THUMB",
+        "profileImageUrlSmall" : "/api/users/ewrp-978f/profile_images/TINY",
+        "roleName" : "administrator",
+        "screenName" : "Administrator",
+        "rights" : [ "create_datasets", "edit_others_datasets", "edit_sdp", "edit_site_theme", "moderate_comments", "manage_users", "chown_datasets", "edit_nominations", "approve_nominations", "feature_items", "federations", "manage_stories", "manage_approval", "change_configurations", "view_domain", "view_others_datasets", "edit_pages", "create_pages", "view_goals", "view_dashboards", "edit_goals", "edit_dashboards", "create_dashboards", "manage_provenance", "create_story", "edit_story_title_desc", "create_story_copy", "delete_story", "manage_story_collaborators", "manage_story_visibility", "manage_story_public_version", "edit_story", "view_unpublished_story", "view_story", "view_all_dataset_status_logs", "use_data_connectors" ]
+      },
+      "tags" : [ "physical activity", "exercise", "recommendations", "obesity" ],
+      "flags" : [ "default", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ 1, "16878E45-015F-475B-8836-2CE45B21310C", 1, 1451574027, "904530", 1451574027, "904530", null, "2013", "All ", "Total", "62.6" ]
+, [ 2, "BFE172BB-50B2-451F-8E9F-FEB46AD0F159", 2, 1451574027, "904530", 1451574027, "904530", null, "2013", "Sex", "Male", "62.8" ]
+, [ 3, "034D3DF5-D60B-4A93-9440-BF54D638BD00", 3, 1451574027, "904530", 1451574027, "904530", null, "2013", "Sex", "Female", "62.4" ]
+, [ 4, "D90EE857-78A0-44B4-A611-D8757751F57D", 4, 1451574027, "904530", 1451574027, "904530", null, "2013", "Age", "18 - 24", "71.0" ]
+, [ 5, "00662B21-6524-4BBE-829B-090D81DC7729", 5, 1451574027, "904530", 1451574027, "904530", null, "2013", "Age", "25 - 34", "59.6" ]
+, [ 6, "D3FB1A52-8942-41B2-8D87-5FB11E1225A6", 6, 1451574027, "904530", 1451574027, "904530", null, "2013", "Age", "35 - 50", "61.3" ]
+, [ 7, "7D21CAAB-5C58-4640-99B2-1A137D2E130C", 7, 1451574027, "904530", 1451574027, "904530", null, "2013", "Age", "51 - 64", "60.7" ]
+, [ 8, "7E2C128E-499B-4F77-ACE2-5F8CB86B820C", 8, 1451574027, "904530", 1451574027, "904530", null, "2013", "Age", "65+", "64.4" ]
+, [ 9, "FA7C9117-BAE9-4F0D-A7A0-3E0648124A89", 9, 1451574027, "904530", 1451574027, "904530", null, "2013", "Ethnicity", "White", "69.2" ]
+, [ 10, "A7DA3489-5031-4000-A55A-D3A0210FE69F", 10, 1451574027, "904530", 1451574027, "904530", null, "2013", "Ethnicity", "Hispanic", "56.1" ]
+, [ 11, "30B21872-7FB0-4EEA-A9FA-735D286ECA71", 11, 1451574027, "904530", 1451574027, "904530", null, "2013", "Ethnicity", "Black", "55.0" ]
+, [ 12, "8CCB550E-83DC-4A94-9604-D37B0FAD4F86", 12, 1451574027, "904530", 1451574027, "904530", null, "2013", "Ethnicity", "Asian/Other", "51.0" ]
+, [ 13, "40C43909-FDB9-4A29-919D-8AB17F90ABA1", 13, 1451574027, "904530", 1451574027, "904530", null, "2013", "Education", "Less than High School", "50.2" ]
+, [ 14, "0E193BC8-53B0-427F-B62D-CA2612FC944C", 14, 1451574027, "904530", 1451574027, "904530", null, "2013", "Education", "High School Graduate", "61.8" ]
+, [ 15, "6FAA35A5-AA9D-4213-9F04-F533617B2261", 15, 1451574027, "904530", 1451574027, "904530", null, "2013", "Education", "Some College", "63.7" ]
+, [ 16, "37040746-48F8-47BB-AB1D-CF97EAC0895A", 16, 1451574027, "904530", 1451574027, "904530", null, "2013", "Education", "College Graduate", "70.3" ]
+, [ 17, "9167C0BC-1694-4BAC-876D-08C45D842383", 17, 1451574027, "904530", 1451574027, "904530", null, "2013", "Income", "Less than $15,000", "59.2" ]
+, [ 18, "E5BE0F48-9678-4A48-8638-D4967546A333", 18, 1451574027, "904530", 1451574027, "904530", null, "2013", "Income", "$15,000 - 24,999", "59.1" ]
+, [ 19, "E86B8588-E9EA-47B7-806C-4F1A2BD513B9", 19, 1451574027, "904530", 1451574027, "904530", null, "2013", "Income", "$25,000 - 34,999", "60.1" ]
+, [ 20, "2309FA53-7831-48DD-B0F9-F1230A92FF7C", 20, 1451574027, "904530", 1451574027, "904530", null, "2013", "Income", "$35,000 - 49,999", "64.9" ]
+, [ 21, "1C4BF4EF-5794-4ED6-B863-E918411C530E", 21, 1451574027, "904530", 1451574027, "904530", null, "2013", "Income", "$50,000+", "70.1" ]
+, [ 22, "8F9A9E44-6A4F-47D2-8B1B-C92BD959E472", 22, 1451574027, "904530", 1451574027, "904530", null, "2013", "Overweight Status", "Overweight/Obese", "60.7" ]
+, [ 23, "DA234ACC-5672-4502-A212-948B87F1270E", 23, 1451574027, "904530", 1451574027, "904530", null, "2013", "Overweight Status", "Not Overweight", "68.7" ]
+, [ 24, "ED5EE644-0F3B-40FC-B783-8BA2A0B37546", 24, 1451574027, "904530", 1451574027, "904530", null, "2013", "SNAP/CalFresh Status, % FPL", "Participant", "61.6" ]
+, [ 25, "419ED3D0-5519-4038-A92B-9B117FC835F6", 25, 1451574027, "904530", 1451574027, "904530", null, "2013", "SNAP/CalFresh Status, % FPL", "Likely Eligible, ≤ 130%", "52.1" ]
+, [ 26, "28EDB0B7-FA2D-4D36-B2D5-44F99D708FF3", 26, 1451574027, "904530", 1451574027, "904530", null, "2013", "SNAP/CalFresh Status, % FPL", "Not Eligible, > 185% ", "69.6" ]
+ ]
+}
