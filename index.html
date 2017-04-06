@@ -16,13 +16,13 @@
     </div>
 <div id ='a'>
     <select id ="dropdown">
-      <option value ="0">"All"</option>
-      <option value ="1">"Sex"</option>
-      <option value ="2">"Age"</option>
-      <option value ="3">"Ethnicity"</option>
-      <option value ="4">"Education"</option>
-      <option value ="5">"Income"</option>
-      <option value ="6">"Overweight Status"</option>
+      <option value ="0">Total</option>
+      <option value ="1">Sex</option>
+      <option value ="2">Age</option>
+      <option value ="3">Ethnicity</option>
+      <option value ="4">Education</option>
+      <option value ="5">Income</option>
+      <option value ="6">Overweight Status</option>
     </select>
 </a>
     <script type="text/javascript">
@@ -322,7 +322,7 @@
     //What happens When a dropdown menu is selected
     $("#dropdown").on('change', function()
     {
-    if ($(this).val() == '0')//All
+    if ($(this).val() == '0')//Total
     {
       chart.update({
       subtitle:
